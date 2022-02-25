@@ -12,5 +12,5 @@ provider "azurerm" {
   features {
     
   }
-  skip_provider_registration = false
+#   skip_provider_registration = false
 }
