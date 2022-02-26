@@ -20,7 +20,7 @@ resource "azurerm_kubernetes_cluster" "tf-px-aks" {
 
 resource "azurerm_resource_group" "gonsite" {
   name = "gonwebsite"
-  location = "eastus"
+  location = "eastus2"
 }
 resource "azurerm_static_site" "gonsite" {
   name = "gonsite"
