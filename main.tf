@@ -32,7 +32,10 @@ resource "azurerm_static_site" "mystaticsite" {
 }
 
 
-output "gonsitedata" {
-  default_host_name = azurerm_static_site.gonsite.default_host_name
-  management_token = azurerm_static_site.gonsite.api_key
+output "default_host_name" {
+  value = azurerm_static_site.gonsite.default_host_name
+}
+
+output "man_token" {
+  value = azurerm_static_site.gonsite.api_key
 }
