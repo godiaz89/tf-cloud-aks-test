@@ -26,8 +26,8 @@ resource "azurerm_static_site" "gonsite" {
   name = "gonsite"
   location = azurerm_resource_group.gonsite.location
   resource_group_name = azurerm_resource_group.gonsite.name
-  sku_tier = "standard"
-  sku_size = "standard"
+  sku_tier = "Standard"
+  sku_size = "Standard"
 
 }
 
