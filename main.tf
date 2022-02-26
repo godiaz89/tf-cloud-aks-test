@@ -22,7 +22,7 @@ resource "azurerm_resource_group" "gonsite" {
   name = "gonwebsite"
   location = "eastus"
 }
-resource "azurerm_static_site" "mystaticsite" {
+resource "azurerm_static_site" "gonsite" {
   name = "gonsite"
   location = azurerm_resource_group.gonsite.location
   resource_group_name = azurerm_resource_group.gonsite.name
