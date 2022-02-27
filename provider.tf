@@ -1,4 +1,12 @@
 terraform {
+  cloud {
+    organization = "tfgonza"
+    hostname = "app.terraform.io"
+    workspaces {
+      tags = ["gonsite"]
+    }
+    
+  }
   required_providers {
     azurerm = {
       source = "hashicorp/azurerm"

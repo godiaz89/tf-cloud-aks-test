@@ -19,11 +19,11 @@ resource "azurerm_kubernetes_cluster" "tf-px-aks" {
 
 
 resource "azurerm_resource_group" "gonsite" {
-  name = "gonwebsite"
+  name = "gonwebsite2"
   location = "eastus2"
 }
 resource "azurerm_static_site" "gonsite" {
-  name = "gonsite"
+  name = "gonsite-cli"
   location = azurerm_resource_group.gonsite.location
   resource_group_name = azurerm_resource_group.gonsite.name
   sku_tier = "Standard"
